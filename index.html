@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de Piste de Noël</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🎄 Jeu de Piste de Noël 🎄</h1>
+  <p>Appuyez sur le bouton pour commencer et résoudre les énigmes !</p>
+  
+  <button id="start">🎅 Démarrer l'énigme 🎅</button>
+  
+  <div id="riddle-box">
+    <p id="riddle-text">Cliquez sur "Démarrer" pour découvrir votre première énigme.</p>
+    <input type="text" id="answer-input" placeholder="Entrez votre réponse ici" />
+    <button id="submit-answer">Valider la réponse</button>
+    <p id="feedback"></p>
+  </div>
+
+  <!-- Section de récompenses -->
+  <div id="reward-section">
+    <h2>Votre Collection</h2>
+    <div id="reward-collection"></div>
+  </div>
+
+  <!-- Étoiles scintillantes -->
+  <div id="star-container"></div>
+
+  <!-- Musique de fond -->
+  <audio id="bg-music" loop>
+    <source src="audio/christmas-music.mp3" type="audio/mp3">
+    Votre navigateur ne supporte pas la balise audio.
+  </audio>
+
+  <!-- Code final -->
+  <button id="final-code-btn">Voir le code final</button>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
